@@ -9,7 +9,7 @@ import javax.persistence.*;
 public class User {
 
     @OneToOne(mappedBy = "user")
-    @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
+    @Cascade(org.hibernate.annotations.CascadeType.ALL)
     private Car car;
 
     @Id
@@ -36,7 +36,9 @@ public class User {
 
     public Car getCar() { return car; }
 
-    public void setCar(Car car) { this.car = car; }
+    public User setCar(Car car) { this.car = car;
+        return null;
+    }
 
     public Long getId() {
         return id;
