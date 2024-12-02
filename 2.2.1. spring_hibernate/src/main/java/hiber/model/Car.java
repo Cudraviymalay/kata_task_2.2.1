@@ -29,17 +29,29 @@ public class Car implements Serializable {
     }
 
 
-    public User getUser() { return user; }
+    public User getUser() {
+        return user;
+    }
 
-    public void setUser(User user) { this.user = user; }
+    public void setUser(User user) {
+        this.user = user;
+    }
 
-    public String getModel() { return model; }
+    public String getModel() {
+        return model;
+    }
 
-    public void setModel(String model) { this.model = model; }
+    public void setModel(String model) {
+        this.model = model;
+    }
 
-    public int getSeries() { return series; }
+    public int getSeries() {
+        return series;
+    }
 
-    public void setSeries(int series) { this.series = series; }
+    public void setSeries(int series) {
+        this.series = series;
+    }
 
     @Override
     public String toString() {
